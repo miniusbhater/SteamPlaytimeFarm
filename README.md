@@ -17,10 +17,10 @@ This means that to steam the fake games are indistinguishable from the real game
 
 ## Features
 ### Simple UI
-<img width="355" height="531" alt="image" src="https://github.com/user-attachments/assets/f330ddbc-5484-4a1c-b1ac-93c3a88be8af" />
+<img width="372" height="559" alt="image" src="https://github.com/user-attachments/assets/96eeba20-7509-488d-9777-2288b6444884" />
 
 ### Idle in multiple games at once
-<img width="352" height="531" alt="image" src="https://github.com/user-attachments/assets/3db36c55-24c5-4b2c-b349-c45b214a476f" />
+<img width="355" height="553" alt="image" src="https://github.com/user-attachments/assets/ea806da7-8cca-4900-a9c0-ea1f8ef5385e" />
 
 ### Save app ids with a name to quickly start idling
 <img width="564" height="586" alt="image" src="https://github.com/user-attachments/assets/5474d1e0-eb47-4471-ab08-8ed336f4e8e5" />
