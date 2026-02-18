@@ -2,11 +2,14 @@
 ### A lightweight tool to farm playtime on Steam games
 
 SteamPlaytimeFarm (SPF) allows you to farm playtime in steam games which can allow you to obtain trading cards quickly!
+<br>
 Requires you to have your steam client open and be logged in.
+<br>
 You may only idle games you have purchased and that are in your Steam library.
 
 ## How it works
 SteamPlaytimeFarm works by creating processes that trick your steam client into thinking it is running a specific game.
+<br>
 This means that to steam the fake games are indistinguishable from the real games.
 
 #### Any issues or bans (while unlikely) are YOUR responsibility!!
