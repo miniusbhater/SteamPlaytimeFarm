@@ -15,6 +15,7 @@ This means that to steam the fake games are indistinguishable from the real game
 #### Any issues or bans (while unlikely) are YOUR responsibility!!
 
 <br>
+
 ### Simple UI
 <img width="355" height="531" alt="image" src="https://github.com/user-attachments/assets/f330ddbc-5484-4a1c-b1ac-93c3a88be8af" />
 
