@@ -22,6 +22,9 @@ This means that to steam the fake games are indistinguishable from the real game
 ### Idle in multiple games at once
 <img width="352" height="531" alt="image" src="https://github.com/user-attachments/assets/3db36c55-24c5-4b2c-b349-c45b214a476f" />
 
+### Save app ids with a name to quickly start idling
+<img width="564" height="586" alt="image" src="https://github.com/user-attachments/assets/5474d1e0-eb47-4471-ab08-8ed336f4e8e5" />
+
 ### Can also be used without the launcher
 <img width="780" height="262" alt="image" src="https://github.com/user-attachments/assets/5abafa1f-54cc-4039-b8e0-93a8b5dee26d" />
 
