@@ -10,5 +10,10 @@ namespace SteamPlaytimeFarmLauncher.Game
         public int AppId { get; set; }             // appID
         public Process Process { get; set; }       // process running the "game"
         public DateTime StartedAt { get; set; }    // start time
+
+        public override string ToString()
+        {
+            return $"{AppId,-10}{Process.Id,-10}{StartedAt:HH:mm:ss}";
+        }
     }
 }

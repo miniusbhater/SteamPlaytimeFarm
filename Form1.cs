@@ -11,11 +11,13 @@ namespace SteamPlaytimeFarmLauncher
         {
             InitializeComponent();
             this.FormClosing += Form1_FormClosing;
+            listBoxGames.Font = new Font("Consolas", 10);
+            RefreshGameList();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            label3.Text = Application.ProductVersion.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -65,9 +67,12 @@ namespace SteamPlaytimeFarmLauncher
         private void RefreshGameList() // refresh the game list
         {
             listBoxGames.Items.Clear();
+            listBoxGames.Items.Add("AppID     PID       Started");
+            listBoxGames.Items.Add("-----     -----     -------");
+
             foreach (var game in runningGames)
             {
-                listBoxGames.Items.Add($"AppID: {game.AppId} | PID: {game.Process.Id} | Started: {game.StartedAt:T}");
+                listBoxGames.Items.Add(game);
             }
         }
 
@@ -84,22 +89,14 @@ namespace SteamPlaytimeFarmLauncher
 
         private void button3_Click(object sender, EventArgs e) // stop selected game  
         {
-            if (listBoxGames.SelectedIndex == -1) return;
-
-            var game = runningGames[listBoxGames.SelectedIndex];
-
-            try
+            if (listBoxGames.SelectedItem is Game.Game selectedGame)
             {
-                if (!game.Process.HasExited)
-                    game.Process.Kill();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Failed to stop process: " + ex.Message);
-            }
+                if (!selectedGame.Process.HasExited)
+                    selectedGame.Process.Kill();
 
-            runningGames.Remove(game);
-            RefreshGameList();
+                runningGames.Remove(selectedGame);
+                RefreshGameList();
+            }
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e) // kill the processes when SPF is exited
@@ -131,6 +128,22 @@ namespace SteamPlaytimeFarmLauncher
                 UseShellExecute = true
             };
             Process.Start(psi);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            using (var form = new SaveEntries())
+            {
+                if (form.ShowDialog() == DialogResult.OK && form.SelectedAppId.HasValue)
+                {
+                    textBox1.Text = form.SelectedAppId.Value.ToString();
+                }
+            }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

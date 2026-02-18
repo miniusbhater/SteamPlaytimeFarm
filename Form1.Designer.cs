@@ -36,6 +36,7 @@
             label2 = new Label();
             button3 = new Button();
             label3 = new Label();
+            button4 = new Button();
             SuspendLayout();
             // 
             // textBox1
@@ -113,13 +114,26 @@
             label3.Name = "label3";
             label3.Size = new Size(31, 13);
             label3.TabIndex = 7;
-            label3.Text = "1.0.0";
+            label3.Text = "1.0.1";
+            label3.Click += label3_Click;
+            // 
+            // button4
+            // 
+            button4.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.Location = new Point(12, 120);
+            button4.Name = "button4";
+            button4.Size = new Size(309, 21);
+            button4.TabIndex = 8;
+            button4.Text = "Saved / New Saved";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(333, 484);
+            Controls.Add(button4);
             Controls.Add(label3);
             Controls.Add(button3);
             Controls.Add(label2);
@@ -131,6 +145,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SteamPlaytimeFarm";
             Load += Form1_Load;
             ResumeLayout(false);
@@ -147,5 +162,6 @@
         private Label label2;
         private Button button3;
         private Label label3;
+        private Button button4;
     }
 }
