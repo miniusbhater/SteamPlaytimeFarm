@@ -128,6 +128,8 @@
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(textBox1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
             Name = "Form1";
             Text = "SteamPlaytimeFarm";
             Load += Form1_Load;
