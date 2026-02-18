@@ -12,10 +12,10 @@ SteamPlaytimeFarm works by creating processes that trick your steam client into 
 <br>
 This means that to steam the fake games are indistinguishable from the real games.
 
-#### Any issues or bans (while unlikely) are YOUR responsibility!!
 
 <br>
 
+## Features
 ### Simple UI
 <img width="355" height="531" alt="image" src="https://github.com/user-attachments/assets/f330ddbc-5484-4a1c-b1ac-93c3a88be8af" />
 
@@ -25,3 +25,4 @@ This means that to steam the fake games are indistinguishable from the real game
 ### Can also be used without the launcher
 <img width="780" height="262" alt="image" src="https://github.com/user-attachments/assets/5abafa1f-54cc-4039-b8e0-93a8b5dee26d" />
 
+#### Any issues or bans (while unlikely) are YOUR responsibility!!
